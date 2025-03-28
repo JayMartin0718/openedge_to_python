@@ -14,3 +14,20 @@
 | CASE | match...case | Matches values against patterns (Python 3.10+) | `match x: case 1: print("One") case 2: print("Two")` |
 | ELSEIF | elif | Alternative condition in an if statement | `if x > 10: print("High") elif x == 5: print("Medium")` |
 | END | pass | Marks the end of a block (optional in Python) | `def func(): pass` |
+
+## Exception Handling
+| OpenEdge | Python | Description | Example |
+|----------|--------|-------------|---------|
+| CATCH | except | Handles an exception | `try: x = 1 / 0 except ZeroDivisionError: print("Cannot divide by zero")` |
+| FINALLY | finally | Executes cleanup code after try-except | `try: x = open("file.txt") finally: x.close()` |
+| RAISE | raise | Manually raises an exception | `raise ValueError("Invalid input")` |
+
+## Variable and Data Handling
+| OpenEdge | Python | Description | Example |
+|----------|--------|-------------|---------|
+| DEFINE VARIABLE | variable_name = value | Declares and initializes a variable | `x = 10` |
+| ASSIGN | = | Assigns a value to a variable | `x = "Hello"` |
+| MESSAGE | print | Displays output to the user | `print("Hello, World!")` |
+| UPDATE | input() | Prompts user for input and updates a value | `x = input("Enter name: ")` |
+| EXPORT | json.dump | Writes structured data to a file | `import json; json.dump(data, open("file.json", "w"))` |
+| IMPORT | json.load | Reads structured data from a file | `import json; data = json.load(open("file.json"))` |
